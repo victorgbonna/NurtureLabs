@@ -1,8 +1,9 @@
 import Link from 'next/link'
-function NavLinks() {
-    const extraStyle={
+import { useState} from 'react'   
 
-    }
+function NavLinks() {
+    const [activeNav,setActiveNav]=useState(8)
+
     const links=[
         {label:'Home',
         iconScr:'home.png'},
@@ -17,19 +18,18 @@ function NavLinks() {
         {label:'Section 5',
         iconScr:'coins.png'},
         {label:'Section 6',
-        iconScr:'piechart'},
+        iconScr:'piechart.png'},
         {label:'Section 7',
         iconScr:'bar.png'},
         {label:'Section 8',
-        iconScr:'share.png',
-        active: true},
+        iconScr:'share.png'},
         {label:'Documentation',
-        iconScr:'notepag.png'},
+        iconScr:'notepad.png'},
     ]
     return (
         <>
-            {links.map(({label,iconScr,active}, index)=>(
-                <div key={index} className='item flex padd' style={active && extraStyle}>
+            {links.map(({label,iconScr}, index)=>(
+                <div key={index} onClick={()=> setActiveNav(index)} className={`item ${activeNav==index && 'active'}`}>
                     <img src={`images/icons/${iconScr}`} alt="iconl"/>
                     <p>{label}</p>
                 </div>
@@ -39,34 +39,36 @@ function NavLinks() {
   }
 export default function SideBarNav() {
     return (
-        <nav className="sidebarnav bgbla">
-            <div className="navprofile px2ormx2 flexjusti">
+        <nav className="sidebarnav">
+            <div className="navprofile">
                 <div className="nameavatar">
-                    <div className="avatar">
-                        <p>N</p>
-                    </div>
+                    <p className='avatar'>
+                        N
+                    </p>
+                    
                     <p className="name">Name</p>
                 </div>
+                <img src="images/icons/closing icon (2).png" alt="" />
             </div>
-            <div className="mainnav px2ormx2">
+            <div className="mainnav">
                 <NavLinks/>
             </div>
             <div className="money">
                 <div>
-                    <div className="avatar">
-                        <p>N</p>
-                    </div>
-                    <p>0.90</p>
+                    <p className="avatar">
+                        N
+                    </p>
+                    <p className='amount'>0.90</p>
                 </div>
                 <Link href={'#'}>
                     <a href="">Buy XYZ</a>
                 </Link>
             </div>
-            <div className="flex">
+            <div className=" bottomicons">
                 <img src="images/icons/world.png" alt="" />
-                <div className="flex">
-                    <img src="images/icons/tothemoon" alt="" />
-                    <div>the circle</div>
+                <div className="">
+                    <img src="images/icons/tothemoon.png" alt="" />
+                    <div className='circle'> &nbsp; </div>
                 </div>
             </div>
         </nav>

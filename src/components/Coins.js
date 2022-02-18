@@ -10,9 +10,9 @@ export default function Coins() {
     ]
   return (
     <>
-        {links.map(({asset,price}, index)=>(
-            <div key={index} className='item flex padd' style={active && extraStyle}>
-                <small>{asset} {price}</small>
+        {coinlists.map(({asset,price}, index)=>(
+            <div key={index} className='item'>
+                <small>${price} {asset}</small>
             </div>
         ))}
     </>
