@@ -1,7 +1,7 @@
-import Header from '../components/Header'
+import Header from '../components/header'
 import MainContent from '../components/mainContent'
-import RightSideBar from '../components/RightSideBar'
-import SideBarNav from '../components/SideBarNav'
+import RightSideBar from '../components/rightSideBar'
+import SideBarNav from '../components/sideBarNav'
 
 import axios from 'axios'
 
