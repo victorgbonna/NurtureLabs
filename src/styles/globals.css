@@ -129,9 +129,17 @@ html{
   align-items: flex-start;
   cursor: pointer;
 }
-.mainnav .active{
+.mainnav .active {
   background: var(--gray2);
   margin-left: 10px;
+}
+.mainnav .active img{
+  filter:  brightness(0) invert(1);
+
+}
+
+.mainnav .active p{
+  color: var(--white);
 }
 .mainnav p{
   font-weight: 600;
@@ -140,6 +148,7 @@ html{
   
   color: var(--gray)
 }
+
 
 .money{
   display: flex;

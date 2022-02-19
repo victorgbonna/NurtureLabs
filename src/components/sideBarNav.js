@@ -24,7 +24,7 @@ function NavLinks() {
         {label:'Section 8',
         iconScr:'share.svg'},
         {label:'Documentation',
-        iconScr:'notepad.svg'},
+        iconScr:'note.svg'},
     ]
     return (
         <>
@@ -49,10 +49,10 @@ export default function SideBarNav() {
                     <p className="name">Name</p>
                 </div>
                 <svg width="41" height="39" viewBox="0 0 41 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M30.2588 19.2968H11.2588" stroke="white" stroke-width="2" stroke-linecap="round" strokeLinejoin="round"/>
-                    <path d="M30.2588 11.7211H21.2588" stroke="#808191" stroke-width="2" stroke-linecap="round" strokeLinejoin="round"/>
-                    <path opacity="0.301406" d="M30.2588 26.8724H21.2588" stroke="#808191" stroke-width="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M15.2588 14.562L10.2588 19.2968L15.2588 24.0316" stroke="white" stroke-width="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M30.2588 19.2968H11.2588" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M30.2588 11.7211H21.2588" stroke="#808191" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path opacity="0.301406" d="M30.2588 26.8724H21.2588" stroke="#808191" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M15.2588 14.562L10.2588 19.2968L15.2588 24.0316" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
                 {/* <img src="images/icons/closing icon (2).png" alt="" /> */}
             </div>
