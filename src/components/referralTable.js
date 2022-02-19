@@ -36,7 +36,7 @@ export default function ReferralTable({truncateText, refObject}) {
             <p className='stamount'>{refObject.amount} BNB</p>
             <p className='state'>{refObject.state}</p>
         </li>
-        <li>
+        <li className='refus'>
             <p className='refuser'>{truncateText(refObject.user)}</p>
             <h1>{refObject.index}</h1>
         </li>
